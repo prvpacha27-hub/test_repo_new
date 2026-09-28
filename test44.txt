@@ -1,1 +1,2 @@
-Here we are practicing git 
+Here we are practicing git
+stashed 
