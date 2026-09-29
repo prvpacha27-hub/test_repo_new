@@ -1,2 +1,5 @@
 Here we are practicing git
 stashed 
+
+merging check
+
