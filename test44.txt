@@ -2,4 +2,4 @@ Here we are practicing git
 stashed 
 merging check
 check the status
-
+status
