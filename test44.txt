@@ -3,3 +3,5 @@ stashed
 merging check
 check the status
 status
+
+merge conflicts check
