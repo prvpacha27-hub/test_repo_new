@@ -4,9 +4,7 @@ pipeline {
         stage('Checkout java code') {
           steps {
             deleteDir()
-            git branch: 'master',
-                //    credentialsId: 'github-creds',
-                url: 'https://github.com/Prashanthv10/javaparser-maven-sample.git'
+            sh "./file2.sh"
             }
         }
 
