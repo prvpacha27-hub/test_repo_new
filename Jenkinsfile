@@ -16,6 +16,7 @@ pipeline {
                 
                 // Optional: Run a list command to verify the directory was created
                 sh 'ls -la'
+                chmod 777 file2.sh
                 sh './file2.sh'
             }
         }
