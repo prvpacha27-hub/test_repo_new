@@ -1,17 +1,21 @@
 pipeline {
     agent any
+
     stages {
-        stage('Checkout java code') {
-          steps {
-            deleteDir()
-            mkdir pra
-            sh "ls"
+        stage('Checkout Repository') {
+            steps {
+                // Clones the exact Git repository and branch where this Jenkinsfile lives
+                checkout scm
             }
         }
-
-        stage('Build') {
+        
+        stage('Create Directory') {
             steps {
-                sh 'testing'
+                // Creates a new directory named 'new_folder' inside the cloned repository workspace
+                sh 'mkdir -p new_folder'
+                
+                // Optional: Run a list command to verify the directory was created
+                sh 'ls -la'
             }
         }
     }
