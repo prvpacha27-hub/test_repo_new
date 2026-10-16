@@ -1,16 +1,6 @@
 pipeline {
     agent any
-
-    triggers {
-        githubPush()
-    }
-
     stages {
-      //  stage('Checkout jenkins file') {
-        //    steps {
-          //      checkout scm
-            //}
-        //}
         stage('Checkout java code') {
           steps {
             deleteDir()
