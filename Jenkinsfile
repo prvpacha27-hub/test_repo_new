@@ -4,7 +4,7 @@ pipeline {
         stage('Checkout java code') {
           steps {
             deleteDir()
-            sh "./file2.sh"
+            sh "ls"
             }
         }
 
