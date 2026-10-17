@@ -13,7 +13,7 @@ pipeline {
         stage('Create Directory') {
             steps {
                 // Creates a new directory named 'new_folder' inside the cloned repository workspace
-                sh 'mkdir -p new_folder'
+                sh 'mkdir -p java_code_repo'
                 
                 // Optional: Run a list command to verify the directory was created
                 sh 'ls -la'
