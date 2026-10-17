@@ -23,5 +23,13 @@ pipeline {
 
             }
         }
+        stage('clone repo') {
+            steps {
+                dir('java_code_repo')
+                git branch: 'master',
+                //    credentialsId: 'github-creds',
+                url: 'https://github.com/Prashanthv10/javaparser-maven-sample.git'                
+            }
+        }
     }
 }
